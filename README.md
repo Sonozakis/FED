@@ -101,15 +101,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Breakdownschets (week 1)
 
 <details>
-  <summary>uitwerken na afloop 2e werkgroep</summary>
 
-  ### de hele pagina: 
+  ### De hele pagina: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
+  ### Navigatie: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
+  ### Dropdown: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
@@ -132,8 +131,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Verslag van meeting
   Helaas was ik niet bij deze meeting door problemen met mijn gezondheid op dat moment. Deze vragen heb ik wel opgeschreven voor de volgende les:
-  * Hoe moet ik de achtergrond afbeelding toevoegen aan de eerste article?
-  * Hoe moet ik de animatie onderaan het scherm namaken? Javascript of alleen CSS?
+  * Hoe moet ik de achtergrond afbeelding toevoegen aan de eerste article? -> Met ::before
+  * Hoe moet ik de animatie onderaan het scherm namaken? Javascript of alleen CSS? -> Vooral JavaScript, CSS kan voor de animatie
 
 </details>
 
@@ -144,29 +143,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 2 (week 3)
 
 <details>
-  <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Aangezien ik niet ver kwam met mijn eerste versies ben ik opnieuw begonnen met de CSS. Dit is tot nu toe wel goed gegaan, maar ik ben helaas nog niet zo ver.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Helaas was ik niet bij deze meeting door problemen met mijn gezondheid op dat moment. Ik heb voor mezelf gewoon een planning gemaakt en vragen die ik eventueel kan stellen in de volgende les dat ik er wel ben.
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  Ik ben de dag voor de meeting in gesprek gegeaan met de docent over mijn voortgang. Deze vond hij prima, vooral ook omdat ik net weer opnieuw ben begonnen. Voor de rest heb ik de vragen van vorige week gesteld en een paar nieuwe.
+  * Mag ik een class gebruiken voor de tweede pagina? Als niet, wat moet ik dan doen? -> Classes mogen in dit geval
+  * Moet ik het voorbeeld precies volgen of kan ik ook dingen aanpassen? -> Dingen mogen aangepast worden
+  * Moet ik de main foto ook als achtergrond plaatsen zoals de origineel, of als een image element? -> Image element is toegankelijker 
 
 </details>
 
@@ -177,7 +167,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 2/2 (week 4)
 
 <details>
-  <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
@@ -214,29 +203,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 3 (week 4)
 
 <details>
-  <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  De CSS van beide pagina's  is af. Ik moet nog beginnen aan de JavaScript en de extraatjes voor de surface plane, daarna ben ik klaar.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Aangezien ik er helaas weer niet bij kon zijn heb ik vrijdag 30 september met Nina Vens gebeld, een van onze studentassistentes. Die heeft mijn voortgang bekeken en een hoop vragen die ik had beantwoord.
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  De voortgang vond ze prima en ze vond het er goed uitzien. Deze vragen heb ik allemaal gesteld tijdens ons gesprekje:
+  * Welke CSS file is beter qua hierarchie? -> Maakte niet veel uit, dus ik heb de kortere gekozen
+  * Heb je tips voor de animatie in de footer? -> IntersectionObserver gebruiken
+  * Moet ik een label aanmaken voor de formulier in plaats van de placeholder en als wel hoe moet ik deze koppelen? -> Ja en koppelen met "for=" en id=""
+  * Hoe moet ik de bronnen goed vermelden? -> In de readme, eventueel ook in een comment
 
 </details>
 
