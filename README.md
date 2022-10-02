@@ -270,7 +270,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Bronnenlijst
 
-<details open>
+<details>
   1. De originele website: https://shopsanrio.com/. Dit heb ik gebruikt voor content, sommige afmetingen van elementen en de animaties voor Gudetama en wiggle.
   2. IntersectionObserver tutorial: https://www.youtube.com/watch?v=_5Bu3JY-ZHc. Dit heb ik gebruikt voor de animatie onderaan de pagina van PomPomPurin. Ik heb nog nooit eerder van IntersectionObserver gehoord en ben met deze tutorial aan de slag gegaan om de basic setup te maken. Details heb ik zelf aangepast, zodat het zou passen bij wat ik wilde.
   3. Media query in Javascript oproepen: https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia. Op deze pagina heb ik kunnen leren hoe ik een Media query kan oproepen in JavaScript voor de dark mode versie. Details heb ik zelf aangepast, zodat het zou passen bij wat ik wilde.
