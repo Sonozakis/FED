@@ -268,7 +268,7 @@ header nav ul:nth-of-type(2) a {
 
 /* Links change color of arrow during focus */
 .home main article a:focus::after {
-	content: url(./images/arrow-2.svg);
+	content: url("../images/arrow-2.svg");
 }
 
 
@@ -756,27 +756,27 @@ header nav ul:nth-of-type(2).showMenu {
 
 /* Sanrio logo color */
 .darkMode header nav ul:nth-of-type(1) li h1 a img {
-	content: url(./images/dm-sanrio-logo.svg);
+	content: url("../images/dm-sanrio-logo.svg");
 }
 
 /* Hamburger menu color */
 .darkMode header nav:nth-of-type(1) ul li:nth-of-type(1) img {
-	content: url(./images/dm-hamburger-menu.svg);
+	content: url("../images/dm-hamburger-menu.svg");
 }
 
 /* Search color */
 .darkMode header nav ul:nth-of-type(2) li:nth-of-type(9) img {
-	content: url(./images/dm-search.svg);
+	content: url("../images/dm-search.svg");
 }
 
 /* Background in collab */
 .darkMode .home main article:nth-of-type(1)::before {
-	background-image: url(./images/dm-bg-section-1.svg);
+	background-image: url("../images/dm-bg-section-1.svg");
 }
 
 /* Gudetama in subscribe */
 .darkMode .home section img {
-	content: url(./images/dm-gudetama-footer.svg);
+	content: url("../images/dm-gudetama-footer.svg");
 }
 
 /* Makes border on form field more visible */
@@ -786,17 +786,17 @@ header nav ul:nth-of-type(2).showMenu {
 
 /* Facebook logo color */
 .darkMode footer nav div ul li:nth-of-type(1) a img {
-content: url(./images/dm-fb.svg);
+content: url("../images/dm-fb.svg");
 }
 
 /* Instagram logo color */
 .darkMode footer nav div ul li:nth-of-type(2) a img {
-content: url(./images/dm-ig.svg);
+content: url("../images/dm-ig.svg");
 }
 
 /* Twitter logo color */
 .darkMode footer nav div ul li:nth-of-type(3) a img {
-content: url(./images/dm-twt.svg);
+content: url("../images/dm-twt.svg");
 }
 
 /**************/
