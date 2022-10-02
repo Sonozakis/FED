@@ -1,0 +1,829 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: sofia-pro, verdana, arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+button,
+summary {
+	cursor: pointer;
+}
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	--brand-color: rgb(42, 50, 137);
+	--second-color: rgb(255, 255, 255); 
+	--third-color: rgb(211, 80, 66);
+	--color-text: rgb(77, 94, 119);
+	--link-color-visited: rgb(65, 53, 104);
+	--button-hover: rgb(42, 50, 137, 0.9);
+	--button-active: rgb(29, 35, 104);
+	--article-shadow: rgb(42, 50, 137);
+	--form-field-border: rgb(212, 214, 216);
+	--form-field-shadow: rgba(212, 214, 216, .25);
+	--background-color: rgb(255, 255, 255); 
+}
+
+
+
+/***********/
+/* GENERAL */
+/***********/
+body {
+	background-color: var(--background-color);
+	overflow-x: hidden;
+}
+
+h2 {
+	color: var(--brand-color);
+	font-size: 2.25em;
+	font-weight: 600;
+	letter-spacing: -0.0625em;
+	text-align: center;
+}
+
+h3 {
+	color: var(--brand-color);
+	font-size: 1.31em;
+	font-weight: 600;
+}
+
+p {
+	font-size: 1em;
+	color: var(--color-text);
+	line-height: 1.87em;
+}
+
+a {
+	color: var(--color-text);
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: var(--link-color-visited);
+}
+
+/**************/
+/* CLOSED NAV */
+/**************/
+header {
+	background-color: var(--background-color);
+	box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.1);
+	padding: 0.8125em 1.25em;
+	position: sticky;
+	top: 0;
+	min-width: 100vw;
+	z-index: 3;
+}
+
+/* Inside layout   */
+header nav ul:nth-of-type(1) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Items */
+header nav ul:nth-of-type(1) li {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+/* Hamburger menu image */
+header nav:nth-of-type(1) ul li:nth-of-type(1) img {
+	height: 1.5em;
+	width: 1.5em;
+	display:flex;
+	align-items:center;
+}
+
+/* Hamburger menu button */
+header nav ul:nth-of-type(1) li:nth-of-type(1) button {
+	background-color: var(--background-color);
+	border: none;
+	height: 1.5em;
+	width: 1.5em;
+	display:flex;
+	align-items:center;
+}
+
+/* Sanrio logo */
+header nav ul:nth-of-type(1) li h1 a img {
+	max-width: 6.9em;
+}
+
+/* Gudetama cart and amount next to each other */
+header nav ul:nth-of-type(1) li:nth-of-type(3) {
+	display: flex;
+	flex-direction: row;
+}
+
+/* Gudetama cart */
+header nav ul:nth-of-type(1) li:nth-of-type(3) img {
+	height: 2em;
+	width: 2em;
+	margin-left: auto;
+	display: flex;
+	flex-direction: row-reverse;
+	transition: ease 0.2s;
+	position: relative;
+	right: -0.8em;
+}
+
+/* Gudetama cart up on hover */
+header nav ul:nth-of-type(1) li:nth-of-type(3) img:hover {
+	transform: rotateZ(-20deg);
+}
+
+/* Gudetama cart number */
+header nav ul:nth-of-type(1) li:nth-of-type(3) span {
+	position: relative;
+	text-align: center;
+	line-height: 1;
+	z-index: 2;
+	right: -0.2em;
+	top: -0.4em;
+	background-color: var(--third-color);
+	border-radius: 50%;
+	width: 1.3em;
+	height: 1.3em;
+	color: var(--second-color);
+}
+
+
+/**************/
+/* OPEN NAV */
+/**************/
+header nav ul:nth-of-type(2) {
+	padding:2em 1.5em;
+	display:flex;
+	flex-direction: column;
+	gap: 2em;
+	background-color:var(--background-color);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 3.9em;
+	bottom: 0;
+	z-index: 2;
+	transform:translateX(-100%);
+	transition: 0.5s;
+}
+
+/* Border between elements */
+header nav ul:nth-of-type(2) li:nth-of-type(8) {
+	border-bottom: 0.0625em solid var(--form-field-border);
+	padding-bottom: 2em;
+}
+
+/* Search icon */
+header nav ul:nth-of-type(2) li:nth-of-type(9) img {
+	width: 1.4em;
+	height: 1.4em;
+	margin-right: 1em;
+}
+/* Hello Kitty icon */
+header nav ul:nth-of-type(2) li:nth-of-type(10) img {
+	width: 2em;
+	height: 2em;
+	margin-right: 0.5em;
+}
+
+/* Dark/light mode button */
+header nav ul:nth-of-type(2) li button {
+	line-height: 3em;
+	text-align: center;
+	font-size: 1em;
+	background: var(--brand-color);
+	color: var(--second-color);
+	border: none;
+	padding: 0.2em 1.5em;
+	margin: 0.5em 0em 0em 0em;
+}
+
+/* Link */
+header nav ul:nth-of-type(2) a {
+	font-size: 1.1em;
+	display: flex;
+	align-items: center;
+}
+
+
+/************/
+/* HOME PAGE*/
+/************/
+/*** GENERAL APPEARANCE ***/
+
+/* Links */
+.home main article a {
+	background-color: var(--brand-color);
+	color: var(--second-color);
+	width: 14em;
+	margin: 2em;
+	display: flex;
+	justify-content: center;
+	line-height: 3em;
+	transition: 0.25s;
+}
+
+/* Links arrow after let's go */
+.home main article a::after {
+	content: url(/images/arrow.svg);
+	width: 1em;
+	margin-left: 0.5em;
+	margin-top: 0.2em;
+}
+
+/* Links hover state */
+.home main article a:hover,
+.home main section form input:nth-of-type(2):hover {
+	background-color: var(--button-hover);
+}
+
+/* Focus state */
+.home main article a:focus,
+.home main section form input:nth-of-type(2):focus {
+	background-color: var(--background-color);
+	color: var(--brand-color);
+	border: 0.3em solid var(--brand-color);
+}
+
+/* Links change color of arrow during focus */
+.home main article a:focus::after {
+	content: url(/images/arrow-2.svg);
+}
+
+
+/*** COLLAB ***/
+/* Background */
+.home main article:nth-of-type(1)::before {
+	background-image: url("/images/bg-section-1.svg");
+	background-size: contain;
+	background-repeat: repeat;
+	position: absolute;
+	top: -3.5em;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
+	width: 100vw;
+	z-index: -1;
+	opacity: 0.15;
+}
+
+/* Article */
+.home main article:nth-of-type(1) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 3em 2em 4em 2em;
+	position: relative;
+}
+
+/* Main image */
+.home main article:nth-of-type(1) img:nth-of-type(1) {
+	width: 85vw;
+	max-width: 124.75em;
+	height: 23em;
+	max-height: 25em;
+	object-fit: cover;
+	display: flex;
+	filter: brightness(.75);
+	top: 0em;
+	box-shadow: 0.3em 0.3em 0 0 var(--article-shadow);
+}
+
+/* Wiggling katakana location */
+.home main article:nth-of-type(1) img:nth-of-type(2) {
+	top: 2em;
+	left: 0.5em;
+}
+
+/* Heading */
+.home main article:nth-of-type(1) h2 {
+	color: var(--second-color);
+	position: absolute;
+	top: 4.8em;
+}
+
+/* Links */
+.home main article:nth-of-type(1) a {
+	position: absolute;
+	top: 13em;
+}
+
+/* Text */
+.home main article:nth-of-type(1) p {
+	color: var(--second-color);
+	text-transform: uppercase;
+	letter-spacing: 0.0625em;
+	font-weight: 600;
+	font-size: 0.9em;
+	position: absolute;
+	top: 10.5em;
+}
+
+/* Heading and text shadow */
+.home main article:nth-of-type(1) h2,
+.home main article:nth-of-type(1) p {
+	text-shadow: 1px 1px 1px var(--brand-color);
+}
+
+
+/*** COLLAB, SANRIO COLLECTION ***/
+/* Wiggling Sanrio katakana */
+.home main article:nth-of-type(1) img:nth-of-type(2),
+.home main article:nth-of-type(2) img:nth-of-type(3) {
+	width: 9em;
+	position: absolute;
+	animation-duration: 2s;
+	animation-name: wiggle;
+	animation-iteration-count: infinite;
+}
+
+
+/*** SANRIO COLLECTION, PERSONALISED, SANRIO ART, HELLO KITTY GANG ***/
+/* Article */
+.home main article:nth-of-type(2),
+.home main article:nth-of-type(3),
+.home main article:nth-of-type(4),
+.home main article:nth-of-type(5) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2.5em 2em 0em 2em;
+	position: relative;
+}
+
+/* Links */
+.home main article:nth-of-type(2) a,
+.home main article:nth-of-type(3) a,
+.home main article:nth-of-type(4) a,
+.home main article:nth-of-type(5) a {
+	margin-top: 1em;
+}
+
+
+/*** SANRIO COLLECTION, PERSONALISED, SANRIO ART ***/
+/* Main image */
+.home main article:nth-of-type(2) img:nth-of-type(1),
+.home main article:nth-of-type(3) img:nth-of-type(1),
+.home main article:nth-of-type(4) img:nth-of-type(1) {
+	width: 85vw;
+	max-width: 124.75em;
+	height: 20em;
+	object-fit: cover;
+	display: flex;
+	top: 0em;
+	box-shadow: 0.3em 0.3em 0 0 var(--article-shadow);
+}
+
+
+/*** SANRIO COLLECTION ***/
+/* Wiggling katakana location */
+.home main article:nth-of-type(2) img:nth-of-type(3) {
+	top: 2em;
+	right: 0.5em;
+}
+
+/* Katakana on image */
+.home main article:nth-of-type(2) img:nth-of-type(2) {
+	position: absolute;
+	top: 21.5em;
+	width: 11.5em;
+}
+
+/* Heading */
+.home main article:nth-of-type(2) h2 {
+	padding-top: 1em;
+}
+
+
+/*** PERSONALISED, SANRIO ART ***/
+/* Katakana on image  */
+.home main article:nth-of-type(3) img:nth-of-type(2),
+.home main article:nth-of-type(4) img:nth-of-type(2) {
+	position: absolute;
+	top: 21.5em;
+	width: 10em;
+}
+
+/* Heading */
+.home main article:nth-of-type(3) h2,
+.home main article:nth-of-type(4) h2 {
+	padding-top: 0.8em;
+}
+
+
+/*** HELLO KITTY GANG ***/
+/* Main image */
+.home main article:nth-of-type(5) img:nth-of-type(1) {
+	width: 85vw;
+	max-width: 124.75em;
+	height: 25em;
+	object-fit: cover;
+	display: flex;
+	top: 0em;
+	box-shadow: 0.3em 0.3em 0 0 var(--article-shadow);
+}
+
+/* Katakana on image */
+.home main article:nth-of-type(5) img:nth-of-type(2) {
+	position: absolute;
+	top: 26.2em;
+	width: 10.5em;
+}
+
+/* XO position */
+.home main article:nth-of-type(5) img:nth-of-type(3) {
+	position: absolute;
+	top: 4em;
+	left: 3em;
+}
+
+/* Apple position */
+.home main article:nth-of-type(5) img:nth-of-type(4) {
+	position: absolute;
+	top: 3.5em;
+	right: 3em;
+	animation-direction: reverse;
+}
+
+/* XO and apple animations and size */
+.home main article:nth-of-type(5) img:nth-of-type(3),
+.home main article:nth-of-type(5) img:nth-of-type(4) {
+	width: 3.8em;
+	animation-duration: 2s;
+	animation-name: wiggle;
+	animation-iteration-count: infinite;
+}
+
+/* Heading */
+.home main article:nth-of-type(5) h2 {
+	padding-top: 1.2em;
+}
+
+
+/*** SUBSCRIBE ***/
+.home main section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2em 2em;
+	text-align: center;
+}
+
+/* Gudetama */
+.home section img {
+	width: 9.5em;
+	margin-bottom: 1em;
+	animation: gudetama-move;
+	animation-duration: 9s;
+	animation-iteration-count: infinite;
+}
+
+/* Form */
+.home main section form {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+/* Form label */
+.home main section form label {
+	color: var(--brand-color);
+	display: flex;
+	align-items: flex-start;
+	padding-bottom: 0.5em;
+}
+
+/* Input field */
+.home main section form input:nth-of-type(1) {
+	border-radius: 0.125em;
+	border: 0.0625em solid var(--form-field-border);
+	height: 3em;
+	background-color: var(--background-color);
+	color: var(--color-text);
+	resize: none;
+	font-size: 1em;
+	box-shadow: 0 1px var(--form-field-shadow) inset;
+	text-align: left;
+	padding: 0.5em;
+	caret-color: var(--third-color);
+}
+
+/* Submission button */
+.home main section form input:nth-of-type(2) {
+	line-height: 3em;
+	text-align: center;
+	font-size: 1em;
+	background: var(--brand-color);
+	color: var(--second-color);
+	border: none;
+	margin: 0.5em 0em 0em 0em;
+}
+
+/* Submission button on hover state */
+.home main section form input:nth-of-type(2):hover {
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+/* Heading */
+.home main section h2 {
+	line-height: 1em;
+	margin-bottom: 0.5em;
+	letter-spacing: -0.0625em;
+}
+
+/* Text */
+.home main section p {
+	margin-bottom: 1em;
+}
+
+/* Text under form */
+.home main section p:nth-of-type(2) {
+	font-size: 0.9em;
+}
+
+/* Link under subscribe form */
+.home main section a {
+	color: var(--third-color);
+}
+
+
+
+/************/
+/* ABOUT US */
+/************/
+.about main {
+	display: flex;
+	flex-direction: column;
+	padding: 2em;
+}
+
+/* Intro */
+.about main article:nth-of-type(1) {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Intro photo */
+.about main article:nth-of-type(1) img:nth-of-type(1) {
+	width: 100%;
+}
+
+/* Intro katakana */
+.about main article:nth-of-type(1) img:nth-of-type(2) {
+	width: 15em;
+}
+
+/* Characters */
+.about main article {
+	padding: 1.5em 0em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Seperates h2 and p from the main article for styling purposes */
+.about main article div {
+	padding-left: 1em;
+}
+
+/* Character icons */
+.about main article img {
+	width: 7.5em;
+}
+
+
+
+/**********/
+/* FOOTER */
+/**********/
+footer {
+	display: flex;
+	flex-direction: column;
+	margin: 1em;
+}
+
+/* Little blue border on the bottom of the page */
+footer::after {
+	background-color: var(--brand-color);
+	position: relative;
+	top: 1em;
+	left: -1em;
+	right: 0;
+	bottom: 0;
+	content: "";
+	width: 100vw;
+	height: 1.5em;
+	margin: 0em;
+	padding: 0em;
+}
+
+/* Sanrio logo */
+footer img {
+	width: 8em;
+	margin-bottom: 0.8em;
+}
+
+/* Social media icons */
+footer nav div ul {
+	display: flex;
+	flex-direction: row;
+	border-bottom: 0.0625em solid var(--form-field-border);
+}
+
+/* Spacing between social media icons */
+footer nav div ul li {
+	margin-right: 1em;
+}
+
+/* Social media icons size */
+footer nav div ul li a img {
+	width: 1.875em;
+}
+
+/* Dropdown menu */
+footer details summary {
+	border-bottom: 0.0625em solid var(--form-field-border);
+	padding: 1.5em 0em;
+	/* placeholder, change it when its clickable and a link? */
+}
+
+/* + button after the dropdown menu title links */
+footer nav details summary::after {
+	content: "+";
+	font-size: 1.5em;
+	position: absolute;
+	right: 1.5em;
+	margin: -0.4em 0em;
+	color: var(--brand-color);
+}
+
+/* Dropdown menu titles */
+footer nav details summary {
+	color: var(--brand-color);
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+/* Padding around the lists */
+footer details ul {
+	padding: 1em 0em;
+}
+
+/* Links in dropdown */
+footer nav details ul li a{
+	display: flex;
+	flex-direction: column;
+	padding: 0.5em 0em;
+}
+
+footer details ul li a:visited {
+	color: var(--link-color-visited);
+}
+
+/* Pompompurin */
+footer img:nth-of-type(2) {
+	width: 5em;
+	margin: 1em;
+	position: relative;
+	left: calc(50% - 2.5em);
+	top: calc(50% - 2.5em);
+	transition-timing-function: cubic-bezier(0.6, 0.2, 0.1, 1);
+}
+
+/* Credit text */
+footer p {
+	text-align: center;
+	line-height: 1.3em;
+	font-size: 0.8em;
+}
+
+
+
+/**************/
+/* JAVASCRIPT */
+/**************/
+/* Hides navigation if not opened */
+header nav ul:nth-of-type(2).showMenu {
+	transform: translateX(0);
+}
+
+/* PomPomPurin animation details */
+.pompompurin-animation {
+	animation: pompompurin 0.5s;
+	animation-timing-function: cubic-bezier(.92,0,.16,.99);
+}
+
+/*** DARK MODE BUTTON ***/
+/* Colors in darkmode */
+:root.darkMode {
+	--brand-color: rgb(77, 88, 211);
+	--color-text: rgb(214, 217, 227);
+	--link-color-visited: rgb(146, 122, 224);
+	--button-hover: rgb(77, 88, 211, 0.9);
+	--article-shadow: rgb(77, 88, 211);
+	--form-field-border: rgb(36, 38, 41);
+	--form-field-shadow: none;
+	--background-color: rgb(13, 13, 19); 
+}
+
+/* Sanrio logo color */
+.darkMode header nav ul:nth-of-type(1) li h1 a img {
+	content: url(/images/dm-sanrio-logo.svg);
+}
+
+/* Hamburger menu color */
+.darkMode header nav:nth-of-type(1) ul li:nth-of-type(1) img {
+	content: url(/images/dm-hamburger-menu.svg);
+}
+
+/* Search color */
+.darkMode header nav ul:nth-of-type(2) li:nth-of-type(9) img {
+	content: url(/images/dm-search.svg);
+}
+
+/* Background in collab */
+.darkMode .home main article:nth-of-type(1)::before {
+	background-image: url(/images/dm-bg-section-1.svg);
+}
+
+/* Gudetama in subscribe */
+.darkMode .home section img {
+	content: url(/images/dm-gudetama-footer.svg);
+}
+
+/* Makes border on form field more visible */
+.darkMode .home main section form input:nth-of-type(1) {
+	border-width: 0.13em;
+}
+
+/* Facebook logo color */
+.darkMode footer nav div ul li:nth-of-type(1) a img {
+content: url(/images/dm-fb.svg);
+}
+
+/* Instagram logo color */
+.darkMode footer nav div ul li:nth-of-type(2) a img {
+content: url(/images/dm-ig.svg);
+}
+
+/* Twitter logo color */
+.darkMode footer nav div ul li:nth-of-type(3) a img {
+content: url(/images/dm-twt.svg);
+}
+
+/**************/
+/* ANIMATIONS */
+/**************/
+/* Animation on katakana, XO and apple */
+@keyframes wiggle {
+	0% { transform: rotateZ(0);  }
+	25% { transform: rotateZ(-14deg); }
+	50% { transform: rotateZ(0deg); }
+	75% { transform: rotateZ(14deg); }
+	100% { transform: rotateZ(0deg); }
+}
+
+/* Animation on big Gudetama in subscribe */
+@keyframes gudetama-move {
+	0% { transform: none; }
+	15% { transform: translate3d(-12.5%, 0, 0) rotate3d(0, 0, 1, -5deg); }
+	30% { transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 3deg); }
+	45% { transform: translate3d(-7.5%, 0, 0) rotate3d(0, 0, 1, -3deg); }
+	60% { transform: translate3d(5%, 0, 0) rotate3d(0, 0, 1, 2deg); }
+	75% { transform: translate3d(-2.5%, 0, 0) rotate3d(0, 0, 1, -1deg); }
+	100% { transform: none; }
+}
+
+/* Animation on PomPomPurin in footer */
+@keyframes pompompurin {
+	from { transform:translateY(-90%); opacity: 0;} 
+	to { transform:translateY(0%); opacity: 1;}
+} 
