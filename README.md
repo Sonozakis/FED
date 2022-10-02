@@ -57,7 +57,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   * Niet altijd duidelijk waar je je precies bevindt op de pagina door de hoeveelheid div'jes.
   * Menu wordt telkens helemaal gelezen.
   
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  **Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)**
   * Alt-tekst toevoegen aan alle afbeeldingen.
   * Link titels duidelijk maken.
   * Pop-up weghalen of anders coderen.
