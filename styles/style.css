@@ -246,7 +246,7 @@ header nav ul:nth-of-type(2) a {
 
 /* Links arrow after let's go */
 .home main article a::after {
-	content: url(./images/arrow.svg);
+	content: url("./images/arrow.svg");
 	width: 1em;
 	margin-left: 0.5em;
 	margin-top: 0.2em;
