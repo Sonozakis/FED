@@ -29,9 +29,9 @@ function toggleMenu() {
   // Changes icon from hamburger menu to closed
   var menuIcon = document.querySelector("header nav:nth-of-type(1) ul li:nth-of-type(1) img");
   if (nav.classList.contains("showMenu")) {
-    menuIcon.src="../images/close.svg";
+    menuIcon.src="./images/close.svg";
   } else {
-    menuIcon.src="../images/hamburger-menu.svg";
+    menuIcon.src="./images/hamburger-menu.svg";
   }
 }
 
