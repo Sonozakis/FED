@@ -27,7 +27,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Je website
 
-<details open>
+<details>
   ### Je opdracht:
   https://shopsanrio.com/
 
@@ -101,16 +101,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Breakdownschets (week 1)
 
 <details>
-
+  Aangezien ik al klaar was met de HTML voordat ik deze maakte, heb ik het niet te uitgebreid uitgeschetst.
+  
   ### De hele pagina: 
   
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-  ### Navigatie: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### Dropdown: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdown.png" width="375px" alt="Breakdown schetsen">
 
 </details>
 
