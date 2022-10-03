@@ -173,27 +173,42 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  * Afbeeldingen hebben nu alt tekst, waardoor blinde mensen weten wat op de afbeeldingen te zien is.
+  * Screenreader gaat met tab de navigatie die niet zichtbaar is langs.
+  * De close knop heeft geen andere alt tekst, waardoor de gebruiker niet weet of deze open staat of dicht.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  * Navigatie onzichtbaar maken voor screenreaders totdat deze open is.
+  * Van de close knop een aparte button maken of op een andere manier alt tekst eraan toevoegen.
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  * De site is prima te bedienen met een muis en toetsenbord.
+  * Er kan getabd worden en de focus state is nu goed onderscheidbaar.
+  * Met tab word er eerst door de navigatie gecycled, terwijl deze niet open staat.
+  * Op sommige elementen staat de focus niet goed, zoals de social media afbeeldingen.
+  
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  * De navigatie op een manier onzichtbaar maken voor tab totdat deze openstaat.
+  * Het li element even groot maken als de social media afbeeldingen.
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  * Navigeren gaat nogsteeds lastig.
+  * Sneltoetsen worden eerder ingedrukt.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  * De knoppen zijn al best groot. Ik denk dat ik niet meer hieraan kan doen om het op te lossen.
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  * Ik heb de tekstkleur iets donkerder gemaakt, zodat het makkelijker te lezen is.
+  * In dark mode is de brand-color iets aangepast samen met alle afbeeldingen, zodat het makkelijker te zien is.
+  * Links hebben nu ook een visited state, waardoor het duidelijker is op welke pagina's je al bent geweest.
+  * Links hebben ook een underline bij het hoveren gekregen,  zodat je weet waar je muis is en of de link klikbaaar is (niet zichtbaar op telefoon).
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  * Visueel is de toegankelijkheid prima.
 
 </details>
 
