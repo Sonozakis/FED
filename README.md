@@ -229,7 +229,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/end-result.png" width="375px" alt="Home page">
+  <img src="readme-images/about-us.png" width="375px" alt="About page">
+  <img src="readme-images/darkmode.png" width="375px" alt="Dark mode">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -247,7 +249,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   * Elementen selecteren zonder overal classes toe te voegen.
   * Position en grid geleerd.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/good.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
@@ -260,8 +262,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   * Dark mode kleurenschema mooi maken. Het voelt net niet goed aan. Gelukkig is het wel contrast ratio vriendelijk.
   * Dark mode icoontjes veranderen van het menu.
   * Responsiveness ook uitwerken. Als iets meer tijd had zou het wel lukken, denk ik.
+  * Dark mode knop is niet te klikken in Safari door de onderste border.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/wrong-button.png" width="375px" alt="bummer">
 </details>
 
 
