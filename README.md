@@ -103,6 +103,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
 
   ### De hele pagina: 
+  
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### Navigatie: 
