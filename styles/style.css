@@ -779,6 +779,11 @@ header nav ul:nth-of-type(2).showMenu {
 	content: url("../images/dm-gudetama-footer.svg");
 }
 
+/* Sanrio logo in footer */
+.darkMode footer img {
+	content: url("/images/dm-sanrio-logo.svg");
+}
+
 /* Makes border on form field more visible */
 .darkMode .home main section form input:nth-of-type(1) {
 	border-width: 0.13em;
