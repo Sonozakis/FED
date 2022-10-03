@@ -178,7 +178,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   * De close knop heeft geen andere alt tekst, waardoor de gebruiker niet weet of deze open staat of dicht.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-  * Navigatie onzichtbaar maken voor screenreaders totdat deze open is.
+  * Navigatie onzichtbaar maken voor screenreaders totdat deze open is of een skip naar content knop maken.
   * Van de close knop een aparte button maken of op een andere manier alt tekst eraan toevoegen.
 
   #### Muis en Toetsenbord 
@@ -189,7 +189,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   * Op sommige elementen staat de focus niet goed, zoals de social media afbeeldingen.
   
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-  * De navigatie op een manier onzichtbaar maken voor tab totdat deze openstaat.
+  * De navigatie op een manier onzichtbaar maken voor tab totdat deze openstaat of een skip naar content knop maken.
   * Het li element even groot maken als de social media afbeeldingen.
 
   #### Motoriek (shocks, elastiekjes)
@@ -279,6 +279,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   * Dark mode icoontjes veranderen van het menu.
   * Responsiveness ook uitwerken. Als iets meer tijd had zou het wel lukken, denk ik.
   * Dark mode knop is niet te klikken in Safari door de onderste border.
+  * Skip naar content knop voor screenreaders/toetsenbordgerbruikers. Helaas kwam ik een beetje in tijdsnood en heb ik deze niet kunnen uitwerken.
 
   <img src="readme-images/wrong-button.png" width="375px" alt="bummer">
 </details>
