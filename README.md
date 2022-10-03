@@ -291,3 +291,4 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   3. Media query in Javascript oproepen: https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia. Op deze pagina heb ik kunnen leren hoe ik een Media query kan oproepen in JavaScript voor de dark mode versie. Details heb ik zelf aangepast, zodat het zou passen bij wat ik wilde.
   4. Gudetama theme song: https://www.youtube.com/watch?v=GKokWX011B4. Gebruikt voor de easter egg.
 </details>
+
