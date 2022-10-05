@@ -781,7 +781,7 @@ header nav ul:nth-of-type(2).showMenu {
 
 /* Sanrio logo in footer */
 .darkMode footer img {
-	content: url("/images/dm-sanrio-logo.svg");
+	content: url("../images/dm-sanrio-logo.svg");
 }
 
 /* Makes border on form field more visible */
