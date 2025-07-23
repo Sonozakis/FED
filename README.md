@@ -122,11 +122,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Agenda voor meeting
-  Helaas was ik niet bij deze meeting door problemen met mijn gezondheid op dat moment. Ik heb voor mezelf gewoon een planning gemaakt en vragen die ik eventueel kan stellen in de volgende les dat ik er wel ben.
+  Helaas was ik niet bij deze meeting. Ik heb voor mezelf gewoon een planning gemaakt en vragen die ik eventueel kan stellen in de volgende les dat ik er wel ben.
 
 
   ### Verslag van meeting
-  Helaas was ik niet bij deze meeting door problemen met mijn gezondheid op dat moment. Deze vragen heb ik wel opgeschreven voor de volgende les:
+  Helaas was ik niet bij deze meeting. Deze vragen heb ik wel opgeschreven voor de volgende les:
   * Hoe moet ik de achtergrond afbeelding toevoegen aan de eerste article? -> Met ::before
   * Hoe moet ik de animatie onderaan het scherm namaken? Javascript of alleen CSS? -> Vooral JavaScript, CSS kan voor de animatie
 
@@ -145,7 +145,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Agenda voor meeting
-  Helaas was ik niet bij deze meeting door problemen met mijn gezondheid op dat moment. Ik heb voor mezelf gewoon een planning gemaakt en vragen die ik eventueel kan stellen in de volgende les dat ik er wel ben.
+  Helaas was ik niet bij deze meeting. Ik heb voor mezelf gewoon een planning gemaakt en vragen die ik eventueel kan stellen in de volgende les dat ik er wel ben.
 
 
   ### Verslag van meeting
